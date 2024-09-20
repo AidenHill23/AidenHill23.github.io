@@ -4,15 +4,42 @@ Aiden Hill
 
 */
 /* CSS Reset */
-body header,nav,footer, main, h1, div, img{
+body header,nav,footer, main, h1, div, img, ul, li,a{
 	margin:0;
 	padding:0;
 	border:0;
 }
 
+/*Style rules for the navigation*/
+.nav{
+	padding: 2%;
+	margin-bottom: 1%;
+}
+
+.nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav li{
+	font-size: 2em;
+	border-top: 1px solid #000000;
+}
+
+nav li:first-child{
+	border-top: none;
+}
+
+.nav li a{
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Raboto slab", serif;
+} 
+/*Style rules for body and images*/
 body{
 	background-color:#F0F8FF;
-
+	font-family:"Gowun Batang";
 }
 
 .bitmoji{
@@ -22,60 +49,47 @@ body{
 	padding: 0;
 }
 
-header{	
-	width: 25%;
-	float: left;
-}
-
-.nav{
-	width: 75%;
-	display: inline-block;
-	float: right;
-}
-
 img{
 max-width: 100%;
 display: block;
 }
 
-.nav ul{
-	list-style-type: none;
-	 margin: 0;
-	text-align: right;
+/*Stylle rules for header*/
+header{	
 }
-
-.nav li{
+/*Style rules for projects*/
+.chapters{
 	display: inline-block;
-	font-size: 2em;
-	padding: .5em 1em;
+	border:solid, 1px, #000000;	
+	border-radius:5px;
 }
 
-.nav li a{
-	display: block;
-	color: #000000;
-	padding: .5em 1em;
-	text-decoration: none;
-	font-family: "Raboto slab", serif;
-} 
-
-/*#projects ul{
-	text-align:center;
-	display: inline-block;
+.chapter li{
+	list-style-type:none;
 }
-
-
-#projects a{
-
-}
-*/
-main{
+/*Style rules for the main content*/
+main p{
+	text-align:left;
 }
 
 main ul{
-text-align: center;
-display: inline-block;
+	text-align: center;
+	display: inline-block;
 }
 
 main li{
 	text-align: center;
+} 
+
+iframe{
+	max: width 50%;
+}
+#lebron{
+	width:100px;
+	height:100px;
+}
+
+#Information{
+	text-align:left;
+
 }
