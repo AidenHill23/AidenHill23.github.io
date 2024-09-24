@@ -61,6 +61,7 @@ header{
 	display: inline-block;
 	border:solid, 1px, #000000;	
 	border-radius:5px;
+	list-style:none;
 }
 
 .chapter li{
@@ -91,4 +92,8 @@ iframe{
 #Information{
 	text-align:left;
 
+}
+
+.bold{
+	font-weight: bold;
 }
