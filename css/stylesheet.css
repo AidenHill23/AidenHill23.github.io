@@ -1,0 +1,99 @@
+/*
+Aiden Hill 
+9/11/2024
+
+*/
+/* CSS Reset */
+body header,nav,footer, main, h1, div, img, ul, li,a{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Style rules for the navigation*/
+.nav{
+	margin-bottom: 1%;
+}
+
+.nav ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+.nav li{
+	font-size: 2em;
+	border-top: 1px solid #000000;
+}
+
+nav li:first-child{
+	border-top: none;
+}
+
+.nav li a{
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Raboto slab", serif;
+} 
+/*Style rules for body and images*/
+body{
+	background-color:#F0F8FF;
+	font-family:"Gowun Batang";
+}
+
+.bitmoji{
+	float: left;
+	height: 250px;
+	width: 250px;
+	padding: 0;
+}
+
+img{
+max-width: 100%;
+display: block;
+}
+
+/*Stylle rules for header*/
+header{	
+}
+/*Style rules for projects*/
+.chapters{
+	display: inline-block;
+	border:solid, 1px, #000000;	
+	border-radius:5px;
+	list-style:none;
+}
+
+.chapter li{
+	list-style-type:none;
+}
+/*Style rules for the main content*/
+main p{
+	text-align:left;
+}
+
+main ul{
+	text-align: center;
+	display: inline-block;
+}
+
+main li{
+	text-align: center;
+} 
+
+iframe{
+	max: width 50%;
+}
+#lebron{
+	width:100px;
+	height:100px;
+}
+
+#Information{
+	text-align:left;
+
+}
+
+.bold{
+	font-weight: bold;
+}
