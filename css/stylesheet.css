@@ -64,8 +64,11 @@ header{
 	list-style:none;
 }
 
+.chapters ul{
+	list-style:none;
+}
+
 .chapter li{
-	list-style-type:none;
 }
 /*Style rules for the main content*/
 main p{
