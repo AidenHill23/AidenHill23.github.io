@@ -149,6 +149,8 @@ footer p a{
 	color: #fff;
 	text-decoration: none;
 }
+/*End of mobile*/
+
 
 /*Media Query for tablet Viewport*/
 @media screen and (min-width: 630px), print{
