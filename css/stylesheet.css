@@ -1,0 +1,140 @@
+/*
+Aiden Hill 
+9/11/2024
+
+*/
+/* CSS Reset */
+body header,nav,footer, main, h1, div, img, ul, li,a{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body{
+	background-color:#F0F8FF;
+	font-family:"Gowun Batang";
+}
+
+/*Style rules for mobile*/
+.nav{
+}
+
+.nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav li{
+	font-size: 2em;
+	padding-top:2%;
+	padding-right: 1%;
+}
+
+nav li:first-child{
+	border-top: none;
+}
+
+.nav li a{
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	font-family: "Raboto slab", serif;
+
+} 
+/*Style rules for body and images*/
+
+
+.bitmoji{
+	float: left;
+	height: 250px;
+	width: 250px;
+	padding: 0;
+}
+
+img{
+max-width: 100%;
+display: block;
+}
+
+/*Stylle rules for header*/
+header{	
+}
+/*Style rules for projects*/
+.chapters{
+	display: inline-block;
+	border:solid, 1px, #000000;	
+	border-radius:5px;
+	list-style:none;
+}
+
+.chapters ul{
+	list-style:none;
+}
+
+.chapter li{
+}
+/*Style rules for the main content*/
+main p{
+	text-align:left;
+}
+
+main ul{
+	text-align: center;
+	display: inline-block;
+}
+
+main li{
+	text-align: center;
+} 
+
+iframe{
+	max: width 50%;
+}
+#lebron{
+	width:100px;
+	height:100px;
+}
+
+#Information{
+	text-align:left;
+
+}
+
+.bold{
+	font-weight: bold;
+}
+
+/*End of mobiel style rules*/
+
+/*Media Query for tablet Viewport*/
+@media screen and (min-width: 630px), print{
+	body{
+	}
+
+	nav li {
+		display:inline-block;
+	}
+}
+
+/*media query for desktop viewport*/
+@media screen and (min-width: 1015px), print{
+	body{
+	}
+	nav li a:hover{
+		color:#000;
+		background-color: #ffffff;
+	}
+
+	nav li{
+		display:inline-block;
+	}
+
+	nav{
+	}
+
+	.chapters{
+		text-align: center;
+		display:inline-block;
+		border:none;
+	}
+}
