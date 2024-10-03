@@ -1,0 +1,51 @@
+/* 
+Style sheet created by: 
+Student's Name 
+Today's Date 
+*/
+body {
+    background-color: #dde3fd;
+}
+
+#container {
+    padding-bottom: 500px;
+}
+
+.box {
+    border: 1px solid #000;
+    margin: 2%;
+    padding: 2%;
+    background-color: #798ef6;
+    color: #091034;
+    width: 400px;
+    height: 170px;
+}
+
+/* sticky */
+.sticky {	
+	position: -widekit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+/* relative */
+.relative{
+    position:relative;
+    top:200px;
+    left:200px;
+}
+
+/* fixed */
+
+.fixed{
+    position:fixed;
+    top:150px;
+    right:100px;
+}
+
+/* absolute */
+.absolute{
+    position:absolute;
+    bottom:10px;
+    right:70px;
+}
