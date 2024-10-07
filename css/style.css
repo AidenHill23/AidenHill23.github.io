@@ -11,7 +11,7 @@ body header,nav,footer, main, h1, div, img, ul, li,a{
 }
 
 body{
-	background-color:#F0F8FF;
+	background-color:#000000;
 	font-family:"Gowun Batang";
 }
 
@@ -28,7 +28,6 @@ nav li{
 	font-size: 2em;
 	padding-top:2%;
 	padding-right: 1%;
-	border-top: 1px solid #000;
 }
 
 nav li:first-child{
@@ -40,16 +39,32 @@ nav li a{
 	color: #000000;
 	text-decoration: none;
 	font-family: "Raboto slab", serif;
+
 }
 /*Style rules for body and images*/
 
-/*Stylle rules for header*/
 
+.bitmoji{
+	float: left;
+	height: 250px;
+	width: 250px;
+	padding: 0;
+}
+
+img{
+max-width: 100%;
+display: block;
+}
+
+/*Stylle rules for header*/
+header{	
+}
 /*Style rules for projects*/
 .chapters{
-	display: block;
+	display: inline-block;
+	border:solid, 1px, #000000;	
+	border-radius:5px;
 	list-style:none;
-	
 }
 
 .chapters ul{
@@ -72,6 +87,14 @@ main li{
 	text-align: center;
 } 
 
+iframe{
+	max: width 50%;
+}
+#lebron{
+	width:100px;
+	height:100px;
+}
+
 #Information{
 	text-align:left;
 
@@ -82,18 +105,36 @@ main li{
 }
 
 .grid{
-	display:grid;
+	display:inline-grid;
 	grid-template-columns: auto auto;
+	grid-gap: 20px;
 }
 
-article img{
+figure{
 	position: relative;
 	max-width: 450px;
 	margin: 2% auto;
 }
 
-#hero{
-	max-width: 100%;
+
+article{
+	padding:2%;
+}
+
+article h3{
+	text-align: center;
+}
+
+article img{
+	margin:0 auto;
+}
+
+article ul{
+	margin-left: 10%;
+}
+
+article:nth-of-type(2){
+	background-color:rgba(204,204,204, .3)
 }
 
 /*End of mobile style rules*/
@@ -104,65 +145,33 @@ article img{
 	}
 
 	nav li {
-		display:grid;
-		grid-template-columns: auto auto;
 		display:inline-block;
-		border-top:none;
-		border-right: 1px solid #000;
-		padding:1%;
 	}
-
-	.chapters{
-		text-align: center;
-		display:inline-block;
-		border: 1px solid #000;
-		padding:20px;
-		margin:40px 80px;
-		box-shadow:10px 10px 10px #66B2FF;
-	}
-
 }
 
 /*media query for desktop viewport*/
 @media screen and (min-width: 1015px), print{
 	body{
-	}
+		background-color: #000;
 
-	nav li :hover{
-		opacity:1;
-		box-shadow: 0px 0px 10px #000;
+	}
+	nav li a:hover{
+		color:#000;
+		background-color: #5d41d8;
 	}
 
 	nav li{
-		border-top:none;
-		border-right:none;
+		display:inline-block;
 	}
 
-	#lebron{
-		opacity:.9;
-	}
-
-	#lebron:hover{
-		opacity:1;
-		box-shadow: 5px 10px 8px 10px #888888;
+	nav{
 	}
 
 	.chapters{
 		text-align: center;
 		display:inline-block;
-		border: 1px solid #000;
-		padding:30px;
-		margin:40px 80px;
-		box-shadow:10px 10px 10px #66B2FF;
+		border:solid, 1px, #000000;	
+	    border-radius:5px;
 	}
 
-	.frame{
-		position: relative;
-		max-width: 450px;
-		margin: 2% auto;
-	}
-
-	.frame img{
-		width:450px;
-	}
 }
