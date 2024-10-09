@@ -1,0 +1,26 @@
+table, tr, td, th{
+    border: 1px solid #000;
+}
+
+body{
+    background-color: #ffe5dc;
+}
+
+table{
+    border:1px solid #fd4d0c;
+    box-shadow: #792101;
+}
+
+td{
+    border:#a22c02;
+}
+
+tr:nth-child(odd){
+    background-color:#fe9772;
+}
+
+caption{
+    font-size: 2em;
+    padding: 2%;
+    color:#fd4d0c
+}
