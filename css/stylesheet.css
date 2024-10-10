@@ -24,6 +24,15 @@ nav ul{
 	text-align: center;
 }
 
+form{
+	width:auto;
+}
+.form{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+
 nav li{
 	font-size: 2em;
 	padding-top:2%;
@@ -92,8 +101,30 @@ article img{
 	margin: 2% auto;
 }
 
-#hero{
-	max-width: 100%;
+#curry{
+	display: none;
+}
+
+table{
+	width:40%;
+	margin:0 auto;
+	border: 3px solid #086da8;
+	box-shadow: 8px 8px 8px #015b8f;
+}
+
+ tr,th,td{
+	border: 1px solid  #086da8;
+	border-collapse: collapse;
+	padding:2%;
+}
+
+th{
+	background-color: #015b8f;
+	color: #F0F8FF;
+}
+
+caption{
+	font-size: 2em;
 }
 
 /*End of mobile style rules*/
@@ -165,4 +196,28 @@ article img{
 	.frame img{
 		width:450px;
 	}
+
+	table{
+		width:40%;
+		margin:0 auto;
+		border: 3px solid #086da8;
+		box-shadow: 8px 8px 8px #015b8f;
+	}
+	
+	 tr,th,td{
+		border: 1px solid  #086da8;
+		border-collapse: collapse;
+		padding:2%;
+	}
+	
+	th{
+		background-color: #015b8f;
+		color: #F0F8FF;
+	}
+	
+	caption{
+		font-size: 2em;
+	}
+	
+
 }
