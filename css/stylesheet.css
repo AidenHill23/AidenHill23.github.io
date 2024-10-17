@@ -95,6 +95,11 @@ main li{
 	grid-template-columns: auto auto;
 }
 
+.fav-grid{
+	display:block;
+	grid-template-columns: auto auto;
+}
+
 article img{
 	position: relative;
 	max-width: 450px;
@@ -127,6 +132,14 @@ caption{
 	font-size: 2em;
 }
 
+.basketball li{
+	text-align: left;
+}
+
+.videos{
+	display:block;
+	padding-top: 5%;
+}
 /*End of mobile style rules*/
 
 /*Media Query for tablet Viewport*/
@@ -150,6 +163,15 @@ caption{
 		padding:20px;
 		margin:40px 80px;
 		box-shadow:10px 10px 10px #66B2FF;
+	}
+
+	.videos{
+		display:inline-block;
+	}
+
+	.fav-grid{
+		display:grid;
+		grid-template-columns: auto auto;
 	}
 
 }
@@ -219,5 +241,19 @@ caption{
 		font-size: 2em;
 	}
 	
+	.center{
+		text-align: center;
+	}
+
+	.videos{
+		display:inline-block;
+		height:200px;
+		width: 350px;
+	}
+
+	.fav-grid{
+		display:grid;
+		grid-template-columns: auto auto;
+	}
 
 }
