@@ -15,6 +15,10 @@ body{
 	font-family:"Gowun Batang";
 }
 
+.tablet-desktop{
+	display: none;
+}
+
 /*Style rules for mobile*/
 nav{
 }
@@ -140,6 +144,10 @@ caption{
 	display:block;
 	padding-top: 5%;
 }
+
+.center{
+	text-align: center;
+}
 /*End of mobile style rules*/
 
 /*Media Query for tablet Viewport*/
@@ -172,6 +180,10 @@ caption{
 	.fav-grid{
 		display:grid;
 		grid-template-columns: auto auto;
+	}
+
+	.center{
+		text-align: center;
 	}
 
 }
@@ -254,6 +266,10 @@ caption{
 	.fav-grid{
 		display:grid;
 		grid-template-columns: auto auto;
+	}
+
+	.tablet-desktop{
+	
 	}
 
 }
