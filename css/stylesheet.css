@@ -20,8 +20,6 @@ body{
 }
 
 /*Style rules for mobile*/
-nav{
-}
 
 nav ul{
 	list-style-type: none;
@@ -69,8 +67,6 @@ nav li a{
 	list-style:none;
 }
 
-.chapter li{
-}
 /*Style rules for the main content*/
 main p{
 	text-align:left;
@@ -81,9 +77,7 @@ main ul{
 	display: inline-block;
 }
 
-main li{
-	text-align: center;
-} 
+
 
 #Information{
 	text-align:left;
@@ -112,6 +106,23 @@ article img{
 
 #curry{
 	display: none;
+}
+
+.basketball{
+	margin:0 auto;
+	
+}
+
+.basketball li {
+	text-align: left;
+}
+
+.basketball img{
+	margin:0 auto;
+}
+
+.basketball h1{
+	padding-left: 10%;
 }
 
 table{
@@ -148,12 +159,11 @@ caption{
 .center{
 	text-align: center;
 }
+
 /*End of mobile style rules*/
 
 /*Media Query for tablet Viewport*/
 @media screen and (min-width: 630px), print{
-	body{
-	}
 
 	nav li {
 		display:grid;
@@ -190,8 +200,6 @@ caption{
 
 /*media query for desktop viewport*/
 @media screen and (min-width: 1015px), print{
-	body{
-	}
 
 	nav li :hover{
 		opacity:1;
@@ -268,8 +276,9 @@ caption{
 		grid-template-columns: auto auto;
 	}
 
-	.tablet-desktop{
-	
+	#curry{
+		display:inline-block;
+		margin:0 auto;
 	}
 
 }
