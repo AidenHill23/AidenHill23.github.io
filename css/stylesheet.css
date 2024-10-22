@@ -184,6 +184,19 @@ caption{
 		text-align: center;
 	}
 
+	.table:hover{
+		transform: translateY(-1.35em);
+		box-shadow: 10px 10px 10px #000;
+	} 
+
+	.tablet-desktop{
+		display:block;
+	}
+
+	.mobile-nav{
+		display:none;
+	}
+
 }
 
 /*media query for desktop viewport*/
