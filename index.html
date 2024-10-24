@@ -16,14 +16,29 @@
 </head>
 
 <body>
-	<header>
-	<h1></h1>
-	</header>
+	<header id="logo">
+		<h1 id ="header"></h1>
+		</header>
 	
-	<!-- Area for the navigation of the site (how to get back and forth betweetn pages) -->
-	<div>
-		<nav>
-			<nav >
+		<!--Mobile Nav-->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+			<a href="index.html"> Home </a>
+			<a href="about.html">About Me </a>
+			<a href="projects.html"> Projects </a>
+			<a href="contact.html">Contact Me</a>
+			<a href="tutorial.html">Hobby</a>
+			<a href= "favorite.html">Favorites</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div id="menu">&#9776;</div>
+			</a>
+		</nav>
+	
+		
+		<!-- Area for the navigation of the site (how to get back and forth betweetn pages) -->
+		 <div class="nav">
+			<nav class="tablet-desktop">
 				<ul>
 				<li><a href="index.html"> Home </a></li>
 				<li><a href="about.html">About Me </a></li>
@@ -33,9 +48,7 @@
 				<li><a href= "favorite.html">Favorites</a></li>
 				</ul>
 			</nav>
-		</nav>
-	</div>
-	<!-- Area for all of the main content -->
+		</div>
 	<main>
 		<table class="table">
 			<caption>Certificates</caption>
@@ -67,7 +80,7 @@
 	<p>&copy; Copyright 2024. All Rights Reserved.</p>
 		<p>Hill.Aiden122@gmail.com</p>
 	</footer>
-	
+	<script src="scripts/script.js"></script>
 </body>
 
 </html>
