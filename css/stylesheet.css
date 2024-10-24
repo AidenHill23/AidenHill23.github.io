@@ -27,7 +27,7 @@ body{
 
 .mobile-nav a{
 	color:#000000;
-	font-family: "Raboto slab", serif;
+	font-family: "Gowun Batang" "Raboto slab", serif;
 	text-align: center;
 	font-size: 2em;
 	text-decoration: none;
@@ -60,7 +60,9 @@ nav ul{
 	text-align: center;
 }
 
-
+.grid{
+	display: block;
+}
 
 nav li{
 	font-size: 2em;
@@ -104,8 +106,6 @@ main ul{
 	display: inline-block;
 }
 
-
-
 #Information{
 	text-align:left;
 
@@ -113,11 +113,6 @@ main ul{
 
 .bold{
 	font-weight: bold;
-}
-
-.grid{
-	display:grid;
-	grid-template-columns: auto auto;
 }
 
 .fav-grid{
@@ -175,6 +170,11 @@ caption{
 	text-align: center;
 }
 
+
+#lebron{
+	max-width: 100%;
+}
+
 /*End of mobile style rules*/
 
 /*Media Query for tablet Viewport*/
@@ -224,6 +224,15 @@ caption{
 		display:none;
 	}
 
+	.grid{
+		display:grid;
+		grid-template-columns: auto auto;
+	}
+
+	#em{
+	font-size: 1.5em;
+}
+
 }
 
 /*media query for desktop viewport*/
@@ -231,7 +240,8 @@ caption{
 
 	nav li :hover{
 		opacity:1;
-		box-shadow: 0px 0px 10px #000;
+		box-shadow: 0px 0px 10px #66B2FF;
+		border-radius: 25px;
 	}
 
 	nav li{
@@ -308,5 +318,7 @@ caption{
 		display:inline-block;
 		margin:0 auto;
 	}
+
+	
 
 }
