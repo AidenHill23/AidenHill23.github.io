@@ -12,7 +12,7 @@ body header,nav,footer, main, h1, div, img, ul, li,a{
 
 body{
 	 background-color:#F0F8FF;
-	font-family:"Gowun Batang";
+		font-family:"Gowun Batang";
 }
 
 .tablet-desktop{
@@ -20,10 +20,30 @@ body{
 }
 
 /*Style rules for mobile*/
+/* Style rules for hamburger menu area */
+.mobile-nav{
+	padding: 5%;
+}
 
-nav ul{
-	list-style-type: none;
+.mobile-nav a{
+	color:#000000;
+	font-family: "Gowun Batang" "Raboto slab", serif;
 	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 2%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon{
+	display: block;
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+.tablet-desktop, #menu-links{
+	display:none;
 }
 
 form{
@@ -33,6 +53,15 @@ form{
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-gap: 20px;
+}
+
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+
+.grid{
+	display: block;
 }
 
 nav li{
@@ -51,7 +80,7 @@ nav li a{
 	color: #000000;
 	text-decoration: none;
 	font-family: "Raboto slab", serif;
-}
+} 
 /*Style rules for body and images*/
 
 /*Stylle rules for header*/
@@ -77,8 +106,6 @@ main ul{
 	display: inline-block;
 }
 
-
-
 #Information{
 	text-align:left;
 
@@ -86,11 +113,6 @@ main ul{
 
 .bold{
 	font-weight: bold;
-}
-
-.grid{
-	display:grid;
-	grid-template-columns: auto auto;
 }
 
 .fav-grid{
@@ -148,6 +170,17 @@ caption{
 	text-align: center;
 }
 
+
+#lebron{
+	max-width: 100%;
+	opacity:.9;
+}
+
+#nigeria{
+	max-width: 100%;
+	max-height: 100%;
+}
+
 /*End of mobile style rules*/
 
 /*Media Query for tablet Viewport*/
@@ -161,6 +194,7 @@ caption{
 		border-right: 1px solid #000;
 		padding:1%;
 	}
+
 
 	.chapters{
 		text-align: center;
@@ -189,6 +223,23 @@ caption{
 		box-shadow: 10px 10px 10px #000;
 	} 
 
+	.tablet-desktop{
+		display:block;
+	}
+
+	.mobile-nav{
+		display:none;
+	}
+
+	.grid{
+		display:grid;
+		grid-template-columns: auto auto;
+	}
+
+	#em{
+	font-size: 1.5em;
+}
+
 }
 
 /*media query for desktop viewport*/
@@ -196,7 +247,8 @@ caption{
 
 	nav li :hover{
 		opacity:1;
-		box-shadow: 0px 0px 10px #000;
+		box-shadow: 0px 0px 10px #66B2FF;
+		border-radius: 25px;
 	}
 
 	nav li{
@@ -204,13 +256,19 @@ caption{
 		border-right:none;
 	}
 
-	#lebron{
-		opacity:.9;
-	}
-
 	#lebron:hover{
 		opacity:1;
 		box-shadow: 5px 10px 8px 10px #888888;
+	}
+
+	/* #nigeria{
+		max-height: 100%;
+		max-width: 100%;
+	} */
+
+	#nigeria:hover{
+		width:500px;
+		height:500px;
 	}
 
 	.chapters{
@@ -270,7 +328,7 @@ caption{
 	}
 
 	#curry{
-		display:inline-block;
+		display:block;
 		margin:0 auto;
 	}
 
