@@ -173,6 +173,12 @@ caption{
 
 #lebron{
 	max-width: 100%;
+	opacity:.9;
+}
+
+#nigeria{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /*End of mobile style rules*/
@@ -188,6 +194,7 @@ caption{
 		border-right: 1px solid #000;
 		padding:1%;
 	}
+
 
 	.chapters{
 		text-align: center;
@@ -249,13 +256,19 @@ caption{
 		border-right:none;
 	}
 
-	#lebron{
-		opacity:.9;
-	}
-
 	#lebron:hover{
 		opacity:1;
 		box-shadow: 5px 10px 8px 10px #888888;
+	}
+
+	/* #nigeria{
+		max-height: 100%;
+		max-width: 100%;
+	} */
+
+	#nigeria:hover{
+		width:500px;
+		height:500px;
 	}
 
 	.chapters{
@@ -315,10 +328,8 @@ caption{
 	}
 
 	#curry{
-		display:inline-block;
+		display:block;
 		margin:0 auto;
 	}
-
-	
 
 }
